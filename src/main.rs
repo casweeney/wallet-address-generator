@@ -28,7 +28,7 @@ impl WalletAddress {
         let public_key_hex = hex::encode(public_key.serialize().to_vec());
         
         // Generate address (Bitcoin-style)
-        let address = Self::generate_address(&public_key.serialize());
+        let address = Self::generate_bitcoin_address(&public_key.serialize());
         
         WalletAddress {
             private_key,
