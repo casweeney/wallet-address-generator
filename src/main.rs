@@ -67,6 +67,8 @@ impl WalletAddress {
         // Step 6: Base58 encode
         bs58::encode(address_bytes).into_string()
     }
+
+    // fn generate_ethereum_address() -> String {}
     
     pub fn display(&self) {
         println!("Private Key: {}", self.private_key);
