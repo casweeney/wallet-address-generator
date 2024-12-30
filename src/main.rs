@@ -37,7 +37,7 @@ impl WalletAddress {
         }
     }
     
-    fn generate_address(public_key: &[u8]) -> String {
+    fn generate_bitcoin_address(public_key: &[u8]) -> String {
         // Step 1: SHA256 of public key
         let mut sha256_hasher = Sha256::new();
         sha256_hasher.update(public_key);
